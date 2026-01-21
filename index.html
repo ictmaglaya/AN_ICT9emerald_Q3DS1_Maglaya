@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DRILLSHEET ONE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        height: 100vh;
+        font-family: arial;
+        background-color: #f2f2f2;
+
+        position: absolute;
+        top: 39%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    h2{
+        background-color: rgb(43, 43, 87);
+        color: rgb(194, 177, 255);
+    }
+</style>
+</head>
+
+<body>
+
+<div id="output"></div>
+
+    <script>
+        // String
+        let a = "10";
+        let b = "20";
+
+        let sum = a + b;
+        let diff = a - b;
+        let prod = a * b;
+        let quot = a / b;
+
+        document.getElementById("output").innerHTML =
+    "<h2>Basic Calculator Display</h2>" +
+    "Addition: " + a + " + " + b + "<br>" + " = " + sum + "<br>" +
+    "Subtraction: " + a + " - " + b + "<br>" + " = " + diff + "<br>" +
+    "Multiplication: " + a + " * " + b + "<br>" + " = " + prod + "<br>" +
+    "Division: " + a + " / " + b + "<br>" + " = " + quot;
+    
+    </script>
+</body>
